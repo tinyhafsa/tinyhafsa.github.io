@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!--DTD: Document Type Definition-->
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> <!--meta: data about data--> <!--charset: allows multiple languages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
+
+    <title>Sweet Delights</title> <!--page title - shows on tab-->
+
+    <link rel="stylesheet" href="/contact-page/contact.css"/>
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigationBar">
+            <nav>
+                <a href="index.html" id="left"><img src="/blog-page/images/logo.png" alt="Sweetopia Logo"></a>
+                <a href="#" id="right"><i class="far fa-user-circle"></i></a>
+                <a href="#" id="right"><i class="fa fa-shopping-cart"></i></a>                
+                <a href="/contact-page/contact.html" id="right" class="shop-selected">Contact Us</a>
+                <a href="/about-page/about.html" id="right">About Us</a>
+                <a href="/blog-page/blog.html" id="right">Blog</a>
+                <a href="/shop-page/shop.html" id="right">Shop</a>
+                <a href="/index.html" id="right">Home</a>
+            </nav>
+        </div>
+        <div id="titlePage">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- CONTACT FORM -->
+        <div class="contact">  
+            <div class="details">
+                <div class="section" id="color">
+                    <div class="contact-info">
+                        <p><i class="fa fa-map-marker"></i>Grand Lamas <br> NewMarket Alley</p>
+                        <p><i class="fa fa-phone"></i>+971 8 424 7540 <br> +971 9 591 1010 <br> <i class="fa fa-envelope"></i> contact@sweetdelights.com <br> catering@sweetdelights.com</p>
+                    </div>
+                    <!-- SOCIAL ICONS -->
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+
+                    <img src="/contact-page/images/map.jpg" alt="top-view of a city"> <!-- BAKERY IMAGE -->
+                </div>
+
+                <div class="section">
+                    <h2>Get in Touch</h2>
+                    <form action="#">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Your first name . . .">
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Your last name . . .">
+
+                        <label for="reason">Category</label>
+                        <select name="category" id="reason">
+                            <option value="order">Order</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="catering">Catering & Events</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Your message . . ."></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FAQS -->
+    </main>
+
+    <footer>
+        <!-- LOGO -->
+        <div class="footerInfo">
+            <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footerInfo">
+                <p><a href="/shop-page/shop.html">Shop</a></p>
+                <p><a href="/blog-page/blog.html">Blog</a></p>
+                <p><a href="/about-page/about.html">About Us</a></p>
+                <p><a href="/contact-page/contact.html">Contact Us</a></p>
+        </div>
+
+        <div class="footerInfo">
+            <p>Grand Lamas <br> NewMarket Alley</p>
+            <p>+971 8 424 7540 <br> +971 9 591 1010</p>
+            <p><!-- SOCIAL ICONS --></p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <p class="copyright">
+            Terms & Privacy / Site by Syeda Hafsa 
+            <span id="right">&copy Sweet Delight 2024, All Rights Reserved</span>
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="/contact-page/contact.js"></script>
+
+</body>
+</html>
