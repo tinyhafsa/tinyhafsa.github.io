@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+/*----------------------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #BAE8E8; 
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #BAE8e9; 
+}
+
+/*----------------------------*/
+
+h1 {
+    font-family: "Homemade Apple", cursive;
+}
+
+h4, p, a {
+    font-family: "Raleway", sans-serif;
+}
+
+h5 {
+    font-family: "Raleway", sans-serif;
+    font-style: oblique;
+    text-align: right;
+    margin: 5px;
+}
+
+/*----------------------------*/
+
+header {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/blog-page/images/blog\ page\ -\ bg.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+
+nav {
+    list-style-type: none;
+    padding: 0px 30px 0px 10px;
+    overflow: hidden;
+    background:none;
+}
+nav #left {
+    margin: 0px 20px;
+    padding: 0px;
+    float: left;
+}
+nav #right {
+    float: right;
+}
+nav a {
+    padding: 10px 10px 10px 10px;
+    margin: 12px 12px 0px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+nav #right:hover {
+    background-color: #272343;
+    color: #FFFFFF;
+}
+nav a img {
+    width: 80px;
+}
+.selected {
+    background-color: #BAE8E8;
+    color: #272343;
+}
+.navigationBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navigationBar.scrolled {
+    background-color: #FFFFFF;
+}
+
+.navigationBar a {
+    transition: color 0.3s;
+}
+
+.navigationBar a.scrolled-link {
+    color: #000000; /* Change to black when scrolled */
+}
+
+#titlePage {
+    display: block; 
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#titlePage.hidden {
+    display: none; 
+}
+
+#titlePage h1 {
+    border: 1px solid #272343;
+    padding: 10px 80px 3px 80px;
+    color: #FFFFFF;
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-style: normal;  
+}
+/*----------------------------*/
+
+main {
+    border-top: 30px solid #BAE8E8;
+    border-bottom: 30px solid #BAE8E8;;
+}
+
+/*----------------------------*/
+/*ARTICLE*/
+.top {
+    padding: 3%;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.top:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.article {
+    text-align: center;
+    padding: 10px;
+    margin: 5px 20px 40px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article:hover {
+    box-shadow: 0 10px 10px 0 #BAE8E8;
+}
+
+a {
+    color: #272343;
+}
+
+/*----------------------------*/
+/*BLOG*/
+
+.blog {
+    padding: 4% 8% 6% 8%;
+    background-color: #E3F6F5;
+}
+
+.left {
+    float: left;
+    width: 67%;
+}
+
+.right {
+    float: left;
+    width: 30%;
+    padding-left: 70px;
+}
+
+.about-img {
+    margin-top: 10px;
+    width: 100%;
+    object-fit: cover;
+    height:100px;
+    border: 1px solid #BAE8E8;
+}
+
+.logo-img {
+    width: 100%;
+    object-fit: cover;
+    height:100px;
+}
+
+.postimg {
+    width: 100%;
+    object-fit: cover;
+    height:200px;
+    border: 1px solid #BAE8E8;
+}
+
+.img-blog-post {
+    text-align: center;
+}
+
+.blog-post, .img-blog-post {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.socials a {
+    border: 1px solid #BAE8E8;
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.socials a:hover {
+    background-color: #BAE8E8;
+}
+
+.blog:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.headline {
+    font-style: oblique;
+    font-size: 18px;
+}
+
+.blog p {
+    font-size: 14px;
+}
+
+.pageBreak {
+    padding: 100px 0px 0px 0px;
+    background-image: url(/blog-page/images/blog\ page\ -\ pagebreak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}
+
+/*----------------------------*/
+/*NEWSLETTER*/
+.newsletter {
+    padding: 10%;
+    text-align: center;
+    background-image: url(/blog-page/images/join\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box {
+    padding: 10px;
+    background: #E3F6F5;
+    box-shadow: 0 10px 15px 0 #f1f1f1;
+}
+.form-box input {
+    font-size: 18px;
+    color: #272343;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+}
+.form-box button {
+    color: #272343;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #BAE8E8;
+    margin-left: 10px;
+}
+.form-box button:hover {
+    background: #272343;
+    color: #FFFFFF;
+}
+
+/*----------------------------*/
+/*FOOTER*/
+footer {
+    margin: 0px;
+    padding: 40px 80px 20px 0px;
+    background-color: #E3F6F5;
+    text-align: center;
+}
+
+.footerInfo {
+    display: inline-block;
+    margin: 0% 3%;
+    width: 25%;
+    vertical-align: top;
+    text-align: left;
+}
+.footerInfo .socials {
+    display: flex;
+    justify-content: left;
+    margin-top: 2px;
+}
+.footerInfo .socials a {
+        border: 1px solid #FFFFFF;
+    }
+  
+.footerInfo .socials a:hover {
+        background-color: #FFFFFF;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: #272343;
+}
+
+.footerInfo img {
+    width: 70%;
+    margin: 0%;
+}
+
+.copyright {
+    margin: 60px 0px 0px 80px;
+    text-align: left;
+}
+
+.copyright span {
+    float: right;
+}
+
+
+/*----------------------------*/
+/*RESPONSIVE PAGE*/
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .left, .right {   
+      width: 100%;
+      padding: 0;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    .logo-img {
+        text-align: center;
+        height:40%;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .left, .right {   
+        width: 100%;
+        padding: 0;
+      }
+    .copyright {
+        float: none;
+        text-align: center;
+        padding: 2px;
+    }
+    .logo-img {
+        height:40%;
+        width: 40%;
+    }
+    
+  }
