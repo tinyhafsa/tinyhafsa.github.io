@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+/*----------------------------*/
+/*CUSTOM SCROLLBAR*/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #BAE8E8; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #BAE8e9; 
+  }
+
+/*----------------------------*/
+
+h1, h2 {
+    font-family: "Homemade Apple", cursive;
+}
+
+h4, p, a {
+    font-family: "Raleway", sans-serif;
+}
+
+/*----------------------------*/
+
+/*SECTION 1 - LANDING PAGE*/
+header {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(homepage-images/background\ 3.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0px 30px 0px 10px;
+    padding: 0;
+    overflow: hidden;
+}
+nav #left {
+    margin: 0px 20px;
+    padding: 0px;
+    float: left;
+}
+nav .right {
+    float: right;
+}
+nav a {
+    padding: 10px 10px 10px 10px;
+    margin: 12px 12px 0px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #272343;
+}
+nav .right:hover {
+    background-color: #272343;
+    color: #FFFFFF;
+}
+nav a img {
+    width: 80px;
+}
+.selected {
+    background-color: #BAE8E8;
+    color: #272343;
+}
+.navigationBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navigationBar.scrolled {
+    background-color: #FFFFFF;
+}
+
+/*LANDING PAGE*/
+
+#titlePage {
+    display: block; /* Ensure the title is visible by default */
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#titlePage.hidden {
+    display: none; /* Hide the title when scrolled halfway */
+}
+#titlePage h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-style: normal;  
+}
+#titlePage #quoteOne {
+    font-size: 30px;
+    margin-top: 0px;
+}
+#titlePage button {
+    background-color: transparent;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+}
+#titlePage button a {
+    text-decoration: none;
+    color: #272343;
+}
+#titlePage button:hover {
+    background-color: #BAE8E8;
+    border: 1px solid white;
+}
+
+/*----------------------------*/
+
+main {
+    border-top: 30px solid #BAE8E8;
+    border-bottom: 30px solid #BAE8E8;;
+}
+
+/*----------------------------*/
+
+/*SECTION 2 - INTRODUCTION*/
+
+#shopIntroduction {
+    margin: 0px;
+    padding: 50px 100px;
+    background-color: #E3F6F5;
+}
+
+#intro {
+    margin: 0%;
+    padding: 5px 18px;
+    font-size: 25px;
+    float: left;
+    width: 55%;
+}
+.image1 img {
+    margin-left: 20px;
+    width: 40%;
+    height: 200px;
+    float: right;
+    object-fit: cover;
+    box-shadow: 12px 12px #BAE8E8;
+}
+#intro a {
+    background-color: transparent;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+    text-decoration: none;
+    color: #272343;
+}
+#intro a:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #272343;
+}
+#shopIntroduction::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*----------------------------*/
+
+/*SECTION 3 - BEST SELLERS*/
+#bestSelling {
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    border: 2px solid #BAE8E8;
+    margin: 70px 100px;
+}
+
+.products {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+#bestSelling h2 {
+    margin: 20px;
+    padding: 10px;
+}
+
+#bestSelling img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.best-seller {
+    display: inline-block;
+    margin: 15px;
+    padding: 3px;
+}
+
+.best-seller:hover {
+    background-color: #BAE8E8;
+}
+
+.best-seller .productName {
+    font-size: 16px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.best-seller .productPrice {
+    font-size: 14px;
+    color: #272343;
+    padding: 2px;
+    margin: 2px;
+}
+
+#bestSelling button {
+    background-color: transparent;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+    margin: 12px;
+}
+#bestSelling button a {
+    text-decoration: none;
+    color: #272343;
+}
+#bestSelling button:hover {
+    background-color: #BAE8E8;
+    border: 1px solid white;
+}
+
+/*----------------------------*/
+
+/*PAGE BREAK*/
+.pageBreak1 {
+    padding: 14px;
+    background-image: url(homepage-images/page\ break\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------*/
+
+/*SECTION 4 - CATEGORIES*/
+#categories {
+    margin: 0px;
+    padding: 40px 80px 80px 80px;
+    text-align: center;
+    background-color: #E3F6F5;
+}
+
+#categories h2 {
+    margin: 20px;
+    padding: 10px;
+}
+
+#categories h4 {
+    padding: 5px;
+    margin: 5px;
+}
+
+#categories img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.category {
+    display: inline-block;
+    margin: 15px 10px;
+    border: 1px solid #BAE8E8;
+    background-color: #FFFFFF;
+    padding: 0%;
+    height: 338px ;
+}
+
+.category a {
+    text-decoration: none;
+    color: #272343;
+}
+
+.category:hover {
+    background-color: #BAE8E8;
+    color: #FFFFFF;
+}
+
+#categories .link {
+    background-color: transparent;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+    margin: 12px;
+    text-decoration: none;
+    color: #272343;
+}
+
+#categories .link:hover {
+    background-color: white;
+    border: 1px solid #272343;
+}
+
+/*----------------------------*/
+
+/*PAGE BREAK*/
+.pageBreak2 {
+    padding: 14px;
+    background-image: url(homepage-images/page\ break\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------*/
+
+/*SECTION 5 - TESTIMONIALS*/
+#testimonials {
+    margin: 40px 0px 60px 0px;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin: 20px;
+    padding: 10px;
+}
+
+.review {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #BAE8E8;
+    width: 320px;
+}
+
+.review h4 {
+    padding: 5px;
+    margin: 5px;
+}
+
+.review .stars {
+    color: #BAE8E8;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+}
+
+.review p {
+    text-align: justify;
+}
+
+/*----------------------------*/
+
+/*PAGE BREAK*/
+
+.pageBreak3 {
+    padding: 100px 0px 0px 0px;
+    background-image: url(homepage-images/page\ break\ 3\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0%;
+}
+
+/*----------------------------*/
+
+/*SECTION 6 - JOIN COMMUNITY*/
+
+#joinCommunity {
+    background-image: url(homepage-images/join\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#joinCommunity h2 {
+    margin: 20px;
+    padding: 10px;
+}
+.join {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 60%;
+    height: 20%;
+    border: 1px solid #272343;
+    padding: 20px;
+}
+#joinCommunity h4 {
+    padding: 5px;
+    margin: 5px;
+}
+#joinCommunity p {
+    font-size: 18px;
+}
+#joinCommunity a {
+    background-color: #BAE8E8;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+    text-decoration: none;
+    color: #272343;
+}
+
+#joinCommunity a:hover {
+    background-color: #272343;
+    border: 1px solid white;
+    color: #FFFFFF;
+}
+
+/*----------------------------*/
+
+/*SECTION 7 - FOOTER*/
+
+footer {
+    margin: 0px;
+    padding: 40px 80px 20px 0px;
+    background-color: #E3F6F5;
+    text-align: center;
+}
+
+.footerInfo {
+    display: inline-block;
+    margin: 0% 3%;
+    width: 25%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: #272343;
+}
+
+.footerInfo img {
+    width: 70%;
+    margin: 0%;
+}
+
+.copyright {
+    margin: 60px 0px 0px 80px;
+    text-align: left;
+}
+
+.copyright span {
+    float: right;
+}
+
+/*----------------------------*/
+/* Media Queries */
+/*----------------------------*/
+
+@media (min-width: 600px) and (max-width: 991px) {
+    #intro {
+        width: auto;
+        font-size: 18px;
+    }
+    .image1 img {
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+        box-shadow: none;
+    }
+    #bestSelling {
+        margin: 50px 50px;
+    }
+    #categories {
+        padding: 20px 40px;
+    }
+    .category img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    footer {
+        padding: 20px 40px 10px 0;
+    }
+    .footerInfo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 599px) {
+    header {
+        height: 70%;
+    }
+    nav {
+        margin: 0 10px;
+    }
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+        margin: 8px 8px 0 10px;
+    }
+    nav a img {
+        width: 60px;
+    }
+    #titlePage h1 {
+        font-size: 40px;
+    }
+    #titlePage #quoteOne {
+        font-size: 20px;
+    }
+    #titlePage button {
+        padding: 10px;
+    }
+    #shopIntroduction {
+        padding: 20px;
+    }
+    #intro {
+        font-size: 16px;
+        padding: 10px;
+    }
+    #intro a {
+        padding: 10px;
+    }
+    .image1 img {
+        width: 100%;
+        height: auto;
+    }
+    #bestSelling {
+        margin: 20px 20px;
+        padding: 20px;
+    }
+    #bestSelling img {
+        width: 100%;
+        height: auto;
+    }
+    #categories {
+        padding: 10px 20px;
+    }
+    .category {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #joinCommunity {
+        padding: 20px 20px;
+    }
+    .join {
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+    }
+    footer {
+        padding: 20px;
+    }
+    .footerInfo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
