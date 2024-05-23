@@ -1,0 +1,425 @@
+<!DOCTYPE html> <!--DTD: Document Type Definition-->
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> <!--meta: data about data--> <!--charset: allows multiple languages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
+
+    <title>Sweet Delights</title> <!--page title - shows on tab-->
+
+    <link rel="stylesheet" href="/shop-page/shop.css"/>
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigationBar">
+            <nav>
+                <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>                
+                <a href="#" id="right"><i class="far fa-user-circle"></i></a>
+                <a href="#" id="right"><i class="fa fa-shopping-cart"></i></a>   
+                <a href="/contact-page/contact.html" id="right">Contact Us</a>
+                <a href="/about-page/about.html" id="right">About Us</a>
+                <a href="/blog-page/blog.html" id="right">Blog</a>
+                <a href="/shop-page/shop.html" id="right" class="selected">Shop</a>
+                <a href="/index.html" id="right">Home</a>
+            </nav>
+        </div>
+        <div id="titlePage">
+            <h1>Our Menu</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="category-tabs" class="section">
+            <div class="tab">
+                <button class="tablinks" onclick="openCategory(event, 'Favourites')" id="defaultOpen">Favourites</button>
+                <button class="tablinks" onclick="openCategory(event, 'Cakes')">Cakes</button>
+                <button class="tablinks" onclick="openCategory(event, 'Pasteries')">Pasteries</button>
+                <button class="tablinks" onclick="openCategory(event, 'Cookies')">Cookies</button>
+                <button class="tablinks" onclick="openCategory(event, 'Loafs')">Loafs</button>
+                <button class="tablinks" onclick="openCategory(event, 'Others')">Others</button>
+            </div>
+        </div>
+
+        <div id="Favourites" class="tabcontent">
+            <div class="product-list" class="section">
+                <div class="product">
+                    <img src="/homepage-images/chocolate-cookies.webp" alt="stack of chocolate cookies">
+                    <p class="productName">Chewy Chocolate Chip Cookie</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/homepage-images/honey-cake.webp" alt="Slice of cake in focus - cut cake in the background">
+                    <p class="productName">Honey Cake</p>
+                    <p class="productPrice">Dh 214</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/homepage-images/baked-cheesecake.webp" alt="SLice of cake in focus - cut cake in background">
+                    <p class="productName">Baked Cheesecake</p>
+                    <p class="productPrice">Dh 275</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/homepage-images/almond-croissant.webp" alt="a piece of almond croissant">
+                    <p class="productName">Almond Croissant</p>
+                    <p class="productPrice">Dh 17</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/homepage-images/hazelnut-cookies.webp" alt="close-up of hazelnut cookies">
+                    <p class="productName">Hazelnut Cookie</p>
+                    <p class="productPrice">Dh 19</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/homepage-images/supreme-brownies.webp" alt="tray of brownies">
+                    <p class="productName">Supreme Brownies</p>
+                    <p class="productPrice">Dh 32</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Cakes" class="tabcontent">
+            <div class="product-list" class="section">
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-1.webp" alt="Pistachio Baked Cheesecake">
+                    <p class="productName">Pistachio Baked Cheesecake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-2.webp" alt="Crunchy Chocolate Cake">
+                    <p class="productName">Crunchy Chocolate Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-3.webp" alt="Raspberry Chocolate Cake">
+                    <p class="productName">Raspberry Chocolate Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-4.webp" alt="Hazelnut Cloud Cake">
+                    <p class="productName">Hazelnut Cloud Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-5.webp" alt="Honey Cake">
+                    <p class="productName">Honey Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-6.webp" alt="Chocolate Bubbles Cake">
+                    <p class="productName">Chocolate Bubbles Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-7.webp" alt="Chocolate Wafer Cake">
+                    <p class="productName">Chocolate Wafer Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-8.webp" alt="Chewy Melt Cake">
+                    <p class="productName">Chewy Melt Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-9.webp" alt="Baked Cheesecake">
+                    <p class="productName">Baked Cheesecake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cakes/cake-10.webp" alt="German Chocolate Cake">
+                    <p class="productName">German Chocolate Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+            
+        <div id="Pasteries" class="tabcontent">
+            <div class="product-list" class="section">
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-1.webp" alt="Almond Croissant">
+                    <p class="productName">Almond Croissant</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-2.webp" alt="Cronut">
+                    <p class="productName">Cronut</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-3.webp" alt="Dates Feuilletine Croissant">
+                    <p class="productName">Dates Feuilletine Croissant</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-4.webp" alt="Feta Sundried Mix Croissant">
+                    <p class="productName">Feta Sundried Mix Croissant</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-5.webp" alt="Feuilletine Brioche">
+                    <p class="productName">Feuilletine Brioche</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-6.webp" alt="Fruit Tart Croissant">
+                    <p class="productName">Fruit Tart Croissant</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-7.webp" alt="Zaatar Labneh Croissant">
+                    <p class="productName">Zaatar Labneh Croissant</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-8.webp" alt="Cheese Croissant">
+                    <p class="productName">Cheese Croissant</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/pastery/pastery-9.webp" alt="Plain Chocolate">
+                    <p class="productName">Plain Chocolate</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Cookies" class="tabcontent">
+            <div class="product-list" class="section">
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-1.webp" alt="Blueberry Cereal Cookies">
+                    <p class="productName">Blueberry Cereal Cookies</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-2.webp" alt="Chewy Melt Cookies">
+                    <p class="productName">Chewy Melt Cookies</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-3.webp" alt="Chocolate Chip Cookies">
+                    <p class="productName">Chocolate Chip Cookies</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-4.webp" alt="Chocolate Chip Cookies with Nutella">
+                    <p class="productName">Chocolate Chip Cookies with Nutella</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-5.webp" alt="Hazelnut Cookies">
+                    <p class="productName">Hazelnut Cookies</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-6.webp" alt="Sea Salt Pistachio Cookies">
+                    <p class="productName">Sea Salt Pistachio Cookies</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/cookies/cookie-7.webp" alt="Smores">
+                    <p class="productName">Smores</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Loafs" class="tabcontent">
+            <div class="product-list" class="section">
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-1.webp" alt="Almond and Saffron Loaf">
+                    <p class="productName">Almond and Saffron Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-2.webp" alt="Banana Chocolate Loaf">
+                    <p class="productName">Banana Chocolate Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-3.webp" alt="Lemon and Thyme Loaf">
+                    <p class="productName">Lemon and Thyme Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-4.webp" alt="Lemon Loaf">
+                    <p class="productName">Lemon Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-5.webp" alt="Pistachio Loaf">
+                    <p class="productName">Pistachio Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-6.webp" alt="Nutty Apple Loaf">
+                    <p class="productName">Nutty Apple Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-7.webp" alt="Orange and Almond Loaf">
+                    <p class="productName">Orange and Almond Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-8.webp" alt="Raspberry Hazelnut Loaf">
+                    <p class="productName">Raspberry Hazelnut Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-9.webp" alt="Banana Loaf">
+                    <p class="productName">Banana Loaf</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/loafs/loaf-10.webp" alt="Buttermilk Pound">
+                    <p class="productName">Buttermilk Pound</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Others" class="tabcontent">
+            <div class="product-list" class="section">
+                <div class="product">
+                    <img src="/shop-page/images/others/other-1.webp" alt="Caramel Doughnut">
+                    <p class="productName">Caramel Doughnut</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-2.webp" alt="Hazelnut Doughnut">
+                    <p class="productName">Hazelnut Doughnut</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-3.webp" alt="Vanilla Doughnut">
+                    <p class="productName">Vanilla Doughnut</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-4.webp" alt="Classic French Sable Biscuit">
+                    <p class="productName">Classic French Sable Biscuit</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-5.webp" alt="Vanilla Madeleines">
+                    <p class="productName">Vanilla Madeleines</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-6.jpg" alt="Rocky Pyramids">
+                    <p class="productName">Rocky Pyramids</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-7.webp" alt="Lemon Meringue Tart">
+                    <p class="productName">Lemon Meringue Tart</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-8.webp" alt="Blueberry Crumble Muffin">
+                    <p class="productName">Blueberry Crumble Muffin</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-9.webp" alt="Supreme Brownies">
+                    <p class="productName">Supreme Brownies</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-10.webp" alt="Triple Chocolate Hazelnut Biscotti">
+                    <p class="productName">Triple Chocolate Hazelnut Biscotti</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="/shop-page/images/others/other-11.webp" alt="Ube Milk Cake">
+                    <p class="productName">Ube Milk Cake</p>
+                    <p class="productPrice">Dh 21</p>
+                    <button class="order">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- banner for catering and events -->
+    </main>
+
+    <footer>
+        <!-- LOGO -->
+        <div class="footerInfo">
+            <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footerInfo">
+            <p><a href="/shop-page/shop.html">Shop</a></p>
+            <p><a href="/blog-page/blog.html">Blog</a></p>
+            <p><a href="/about-page/about.html">About Us</a></p>
+            <p><a href="/contact-page/contact.html">Contact Us</a></p>
+        </div>
+
+        <div class="footerInfo">
+            <p>Grand Lamas <br> NewMarket Alley</p>
+            <p>+971 8 424 7540 <br> +971 9 591 1010</p>
+            <p><!-- SOCIAL ICONS --></p>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <p class="copyright">
+            Terms & Privacy / Site by Syeda Hafsa 
+            <span id="right">&copy Sweet Delight 2024, All Rights Reserved</span>
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="/shop-page/shop.js"></script>
+
+</body>
+</html>
