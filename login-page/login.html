@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!--DTD: Document Type Definition-->
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> <!--meta: data about data--> <!--charset: allows multiple languages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
+
+    <title>Login</title> <!--page title - shows on tab-->
+
+    <link rel="stylesheet" href="/login-page/login.css"/>
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigationBar">
+            <nav>
+                <a href="index.html" id="center"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <input type="checkbox" id="flip">
+            <div class="cover">
+                <div class="front">
+                    <img src="/login-page/images/back.jpg" alt="">
+                </div>
+            </div>
+            <form action="#">
+                <div class="form-content">
+                    <div class="login-form">
+                        <div class="title">Sign In</div>
+                        <div class="input-form">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="text">
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Submit">
+                            </div>
+                            <div class="text login-text">Don't have an account? <label for="flip">Sign Up now</label> </div>
+                        </div>
+                    </div>
+        
+                    <div class="signup-form">
+                        <div class="title">Sign Up</div>
+                        <div class="input-form">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Enter your password" required>
+                            </div>                    
+                            <div class="button input-box">
+                                <input type="submit" value="Submit">
+                            </div>
+        
+                            <div class="text sign-up-text">Already have an account? <label for="flip">Sign In now</label> </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+</html>
