@@ -53,7 +53,16 @@ header {
     background-size: cover;
     height: 100%;
 }
-
+.navigationBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+.navigationBar.scrolled {
+    background-color: #FFFFFF;
+}
 nav {
     list-style-type: none;
     margin: 0px 30px 0px 10px;
@@ -82,20 +91,9 @@ nav .right:hover {
 nav a img {
     width: 80px;
 }
-.selected {
+nav .selected {
     background-color: #BAE8E8;
     color: #272343;
-}
-.navigationBar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-
-.navigationBar.scrolled {
-    background-color: #FFFFFF;
 }
 
 /*LANDING PAGE*/
@@ -203,7 +201,6 @@ main {
     overflow-y: hidden;
     white-space: nowrap;
 }
-
 
 #bestSelling h2 {
     margin: 20px;
