@@ -199,29 +199,63 @@ main {
 .meet-team .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
 }
-.meet-team .column {
-    flex: 33.33%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 15px;
+.column {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
 }
-.profile {
-    background-color: #FFFFFF;
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #f1f1f1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
 }
-.baker-info {
-    padding: 0 16px;
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
 }
-.baker-info::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+.flip-card-back {
+    background-color: #fff;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+.flip-card-back h4 {
+    margin-top: 0;
+}
+.flip-card-back p {
+    margin: 10px 0;
+}
+
 .title {
-    color: grey;
+    font-style: oblique;
 }
 
 /*----------------------------*/
@@ -431,6 +465,17 @@ footer {
     .meet-team .column {
         flex: 100%;
         max-width: 75%;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 250px;
+    }
+
+    .category-row {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
     }
 
     /*-----------------------------------*/
