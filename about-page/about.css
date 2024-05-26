@@ -43,7 +43,7 @@ h1, h2 {
     font-family: "Homemade Apple", cursive;
 }
 
-h4, p, a {
+h4, p, a, li {
     font-family: "Raleway", sans-serif;
 }
 
@@ -228,7 +228,7 @@ main {
 
 .purpose-section {
     padding: 0 5%;
-    background-image: url(/about-page/images/bg.jpg); 
+    background-image: url(/about-page/images/purpose\ bg.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 30px solid #BAE8E8;
@@ -245,12 +245,61 @@ ul {
 
 /*----------------------------*/
 
-.pageBreak {
-    padding: 100px 0px 0px 0px;
-    background-image: url(/about-page/images/pagebreak.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0%;
+#categories {
+    margin: 0px;
+    padding: 40px 80px 80px 80px;
+    text-align: center;
+    background-color: #E3F6F5;
+}
+
+#categories h2 {
+    margin: 20px;
+    padding: 10px;
+}
+
+#categories h4 {
+    padding: 5px;
+    margin: 5px;
+}
+
+#categories img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.category {
+    display: inline-block;
+    margin: 15px 10px;
+    border: 1px solid #BAE8E8;
+    background-color: #FFFFFF;
+    padding: 0%;
+    height: 338px ;
+}
+
+.category a {
+    text-decoration: none;
+    color: #272343;
+}
+
+.category:hover {
+    background-color: #BAE8E8;
+    color: #FFFFFF;
+}
+
+#categories .link {
+    background-color: transparent;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+    margin: 12px;
+    text-decoration: none;
+    color: #272343;
+}
+
+#categories .link:hover {
+    background-color: white;
+    border: 1px solid #272343;
 }
 
 /*----------------------------*/
