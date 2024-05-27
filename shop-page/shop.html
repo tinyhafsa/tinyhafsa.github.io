@@ -12,18 +12,33 @@
 
 <body>
     <header>
+        <!-- NAVIGATION BAR -->
         <div class="navigationBar">
             <nav>
-                <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>                
-                <a href="#" id="right"><i class="far fa-user-circle"></i></a>
-                <a href="#" id="right"><i class="fa fa-shopping-cart"></i></a>   
-                <a href="/contact-page/contact.html" id="right">Contact Us</a>
-                <a href="/about-page/about.html" id="right">About Us</a>
-                <a href="/blog-page/blog.html" id="right">Blog</a>
-                <a href="/shop-page/shop.html" id="right" class="selected">Shop</a>
-                <a href="/index.html" id="right">Home</a>
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+                <label id="overlay" for="sidebar-active"></label>
+                <div class="links-container">
+                    <label for="sidebar-active" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+
+                    <a href="/index.html" class="home-link">
+                        <img src="/homepage-images/logo.png" alt="logo" style="width: 80px;">
+                    </a>
+
+                    <a href="/index.html" class="hover">Home</a>
+                    <a href="/shop-page/shop.html" class="hover selected">Shop</a>
+                    <a href="/blog-page/blog.html" class="hover">Blog</a>
+                    <a href="/about-page/about.html" class="hover">About</a>
+                    <a href="/contact-page/contact.html" class="hover">Contact</a>
+                    <a href="/login-page/login.html" class="hover"><i class="fas fa-user"></i></a>
+                </div>
             </nav>
         </div>
+
         <div id="titlePage">
             <h1>Our Menu</h1>
         </div>
@@ -45,37 +60,37 @@
             <div class="product-list" class="section">
                 <div class="product">
                     <img src="/homepage-images/chocolate-cookies.webp" alt="stack of chocolate cookies">
-                    <p class="productName">Chewy Chocolate Chip Cookie</p>
+                    <a href="/favorite-product-pages/product1.html"><p class="productName">Chewy Chocolate Chip Cookie</p></a>
                     <p class="productPrice">Dh 201</p>
                     <button class="order">Add to Cart</button>
                 </div>
                 <div class="product">
                     <img src="/homepage-images/honey-cake.webp" alt="Slice of cake in focus - cut cake in the background">
-                    <p class="productName">Honey Cake</p>
+                    <a href="/favorite-product-pages/product2.html"><p class="productName">Honey Cake</p></a>
                     <p class="productPrice">Dh 402</p>
                     <button class="order">Add to Cart</button>
                 </div>
                 <div class="product">
                     <img src="/homepage-images/baked-cheesecake.webp" alt="SLice of cake in focus - cut cake in background">
-                    <p class="productName">Baked Cheesecake</p>
+                    <a href="/favorite-product-pages/product3.html"><p class="productName">Baked Cheesecake</p></a>
                     <p class="productPrice">Dh 299</p>
                     <button class="order">Add to Cart</button>
                 </div>
                 <div class="product">
                     <img src="/homepage-images/almond-croissant.webp" alt="a piece of almond croissant">
-                    <p class="productName">Almond Croissant</p>
+                    <a href="/favorite-product-pages/product4.html"><p class="productName">Almond Croissant</p></a>
                     <p class="productPrice">Dh 28</p>
                     <button class="order">Add to Cart</button>
                 </div>
                 <div class="product">
                     <img src="/homepage-images/hazelnut-cookies.webp" alt="close-up of hazelnut cookies">
-                    <p class="productName">Hazelnut Cookie</p>
+                    <a href="/favorite-product-pages/product5.html"><p class="productName">Hazelnut Cookie</p></a>
                     <p class="productPrice">Dh 201</p>
                     <button class="order">Add to Cart</button>
                 </div>
                 <div class="product">
                     <img src="/homepage-images/supreme-brownies.webp" alt="tray of brownies">
-                    <p class="productName">Supreme Brownies</p>
+                    <a href="/favorite-product-pages/product6.html"><p class="productName">Supreme Brownies</p></a>
                     <p class="productPrice">Dh 285</p>
                     <button class="order">Add to Cart</button>
                 </div>
@@ -394,7 +409,7 @@
     <footer>
         <!-- LOGO -->
         <div class="footerInfo">
-            <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
+            <a href="/index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
         </div>
 
         <!-- LINKS -->
@@ -411,15 +426,20 @@
             <p><!-- SOCIAL ICONS --></p>
         </div>
 
+
         <!-- COPYRIGHT -->
-        <p class="copyright">
-            Terms & Privacy / Site by Syeda Hafsa 
-            <span id="right">&copy Sweet Delight 2024, All Rights Reserved</span>
-        </p>
+        <div class="copyright">
+            <div class="rightcopy">
+                <p>Terms & Privacy / Site by Syeda Hafsa</p>
+            </div> 
+            <div>
+                <p><span id="right">&copy Sweet Delight 2024, All Rights Reserved</span></p>
+            </div>
+        </div>
     </footer>
 
     <!-- JAVASCRIPT -->
-    <script src="/shop-page/shop.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 </html>
