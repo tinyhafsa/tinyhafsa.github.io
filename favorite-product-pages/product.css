@@ -63,6 +63,12 @@ nav a img {
     width: 80px;
 }
 
+@media (max-width: 768px) {
+    #right {
+        display: none;
+    }
+}
+
 /*-------------------------------------*/
 
 .card-wrapper {
