@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function() {
     var navBar = document.querySelector('.navigationBar');
     var title = document.getElementById('titlePage');
-    if (window.scrollY > window.innerHeight / 6) { // Check if scrolled halfway
+    if (window.scrollY > window.innerHeight / 3.5) { // Check if scrolled halfway
         navBar.classList.add('scrolled');
         title.classList.add('hidden');
     } else {
@@ -10,7 +10,6 @@ window.addEventListener('scroll', function() {
         title.classList.remove('hidden');
     }
 });
-
 
 //TABS
 function openCategory(evt, category) {
