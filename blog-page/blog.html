@@ -4,7 +4,8 @@
     <meta charset="UTF-8"> <!--meta: data about data--> <!--charset: allows multiple languages-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
 
-    <title>Sweet Delights</title> <!--page title - shows on tab-->
+    <title>Blog</title> <!--page title - shows on tab-->
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
 
     <link rel="stylesheet" href="/blog-page/blog.css"/>
     <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
@@ -14,16 +15,30 @@
     <header>
         <div class="navigationBar">
             <nav>
-                <a href="index.html" id="left"><img src="/blog-page/images/logo.png" alt="Sweetopia Logo"></a>
-                <a href="#" id="right"><i class="far fa-user-circle"></i></a>
-                <a href="#" id="right"><i class="fa fa-shopping-cart"></i></a>                
-                <a href="/contact-page/contact.html" id="right">Contact Us</a>
-                <a href="/about-page/about.html" id="right">About Us</a>
-                <a href="/blog-page/blog.html" id="right" class="selected">Blog</a>
-                <a href="/shop-page/shop.html" id="right">Shop</a>
-                <a href="/index.html" id="right">Home</a>
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+                <label id="overlay" for="sidebar-active"></label>
+                <div class="links-container">
+                    <label for="sidebar-active" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+        
+                    <a href="/index.html" class="home-link">
+                        <img src="/homepage-images/logo.png" alt="logo" style="width: 80px;">
+                    </a>
+        
+                    <a href="/index.html" class="hover selected">Home</a>
+                    <a href="/shop-page/shop.html" class="hover">Shop</a>
+                    <a href="/blog-page/blog.html" class="hover">Blog</a>
+                    <a href="/about-page/about.html" class="hover">About</a>
+                    <a href="/contact-page/contact.html" class="hover">Contact</a>
+                    <a href="/login-page/login.html" class="hover"><i class="fas fa-user"></i></a>
+                </div>
             </nav>
         </div>
+
         <div id="titlePage">
             <h1>Blog</h1>
         </div>
@@ -31,6 +46,7 @@
 
     <main>
         <div class="top">
+            <h2>Recipes</h2>
             <div class="blog-post">
                 <div class="column">
                     <div class="article">
@@ -55,11 +71,12 @@
                 </div>
             </div>
             <div>
-                <a href="#">View More.</a>
+                <button><a href="#">View More.</a></button>
             </div>
         </div>
 
         <div class="blog">
+            <h2>Baking Insights</h2>
             <div class="left">
                 <div class="blog-post">
                     <h2>Healthier Baking Alternatives</h2>
@@ -86,7 +103,7 @@
                 <div class="blog-post">
                     <h2>About Us
                     <img src="/blog-page/images/posts/about.jpg" class="about-img" alt="two kids baking together">
-                    <p>Some text about me in culpa qui officia deserunt mollit anim. <br><br>
+                    <p>We are a family-owned bakery dedicated to crafting delicious, high-quality baked goods that bring joy to our community.<br><br>
                     <a href="/about-page/about.html">Learn more.</a></p>
                 </div>
 
@@ -109,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="blog-post">
+                <div class="blog-post socials-section">
                     <h3>Follow Us</h3>
                     <div class="socials">
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -143,21 +160,21 @@
     <footer>
         <!-- LOGO -->
         <div class="footerInfo">
-            <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
+            <a href="/index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
         </div>
 
         <!-- LINKS -->
         <div class="footerInfo">
-                <p><a href="/shop-page/shop.html">Shop</a></p>
-                <p><a href="/blog-page/blog.html">Blog</a></p>
-                <p><a href="/about-page/about.html">About Us</a></p>
-                <p><a href="/contact-page/contact.html">Contact Us</a></p>
+            <p><a href="/shop-page/shop.html">Shop</a></p>
+            <p><a href="/blog-page/blog.html">Blog</a></p>
+            <p><a href="/about-page/about.html">About Us</a></p>
+            <p><a href="/contact-page/contact.html">Contact Us</a></p>
         </div>
 
         <div class="footerInfo">
             <p>Grand Lamas <br> NewMarket Alley</p>
             <p>+971 8 424 7540 <br> +971 9 591 1010</p>
-            <p><!-- SOCIAL ICONS --></p>
+            <!-- SOCIAL ICONS -->
             <div class="socials">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -166,15 +183,19 @@
             </div>
         </div>
 
-        <!-- COPYRIGHT -->
-        <p class="copyright">
-            Terms & Privacy / Site by Syeda Hafsa 
-            <span id="right">&copy Sweet Delight 2024, All Rights Reserved</span>
-        </p>
-    </footer>
 
+        <!-- COPYRIGHT -->
+        <div class="copyright">
+            <div class="rightcopy">
+                <p>Terms & Privacy / Site by Syeda Hafsa</p>
+            </div> 
+            <div>
+                <p><span id="right">&copy Sweet Delight 2024, All Rights Reserved</span></p>
+            </div>
+        </div>
+    </footer>
     <!-- JAVASCRIPT -->
-    <script src="/blog-page/blog.js"></script>
+    <script src="/js/script2.js"></script>
 
 </body>
 </html>

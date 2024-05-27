@@ -41,7 +41,7 @@ h1 {
     font-family: "Homemade Apple", cursive;
 }
 
-h4, p, a {
+h2, h4, p, a {
     font-family: "Raleway", sans-serif;
 }
 
@@ -63,38 +63,6 @@ header {
     height: 60%;
 }
 
-nav {
-    list-style-type: none;
-    padding: 0px 30px 0px 10px;
-    overflow: hidden;
-    background:none;
-}
-nav #left {
-    margin: 0px 20px;
-    padding: 0px;
-    float: left;
-}
-nav #right {
-    float: right;
-}
-nav a {
-    padding: 10px 10px 10px 10px;
-    margin: 12px 12px 0px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-nav #right:hover {
-    background-color: #272343;
-    color: #FFFFFF;
-}
-nav a img {
-    width: 80px;
-}
-.selected {
-    background-color: #BAE8E8;
-    color: #272343;
-}
 .navigationBar {
     position: fixed;
     top: 0;
@@ -102,18 +70,110 @@ nav a img {
     z-index: 1000;
     transition: background-color 0.3s;
 }
-
 .navigationBar.scrolled {
     background-color: #FFFFFF;
+    color: #272343;
 }
-
 .navigationBar a {
     transition: color 0.3s;
 }
-
 .navigationBar a.scrolled-link {
     color: #000000; /* Change to black when scrolled */
 }
+.navigationBar a.scrolled-link:hover {
+    color: #FFFFFF;
+}
+nav {
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.selected {
+    background-color: #BAE8E8;
+    color: #272343;
+}
+.hover:hover {
+    background-color: #272343;
+    color: #FFFFFF;
+}
+nav .home-link {
+    margin-right: auto;
+}
+nav svg {
+    fill: #FFFFFF;
+    transition: fill 0.3s;
+}
+nav svg.scrolled-svg {
+    fill: #272343; /* Change to black when scrolled */
+}
+#sidebar-active {
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+@media (max-width: 768px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: #2D9596;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+        transition: 0.5s ease-out;
+    }
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 15px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button {
+        padding: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+    .selected {
+        background-color: #FFFFFF;
+    }
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+/*---------------------------------*/
+/*LANDING PAGE*/
 
 #titlePage {
     display: block; 
@@ -138,6 +198,11 @@ nav a img {
     font-weight: 400;
     font-style: normal;  
 }
+@media (max-width: 768px) {
+    #titlePage h1 {
+        font-size: 42px;
+    }
+}
 /*----------------------------*/
 
 main {
@@ -146,10 +211,15 @@ main {
 }
 
 /*----------------------------*/
-/*ARTICLE*/
+/* RECIPE ARTICLE */
 .top {
+    margin-bottom: 20px;
     padding: 3%;
     text-align: center;
+}
+
+.blog-post h2 {
+    font-size: 20px;
 }
 
 .column {
@@ -179,25 +249,53 @@ a {
     color: #272343;
 }
 
+.top button {
+    background-color: #FFFFFF;
+    border: 1px solid #272343;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+}
+ button a {
+    text-decoration: none;
+    color: #272343;
+}
+ button:hover {
+    background-color: #BAE8E8;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
 /*----------------------------*/
 /*BLOG*/
 
 .blog {
-    padding: 4% 8% 6% 8%;
+    padding: 50px 8% 80px 8%;
     background-color: #E3F6F5;
+}
+.blog h2 {
+    text-align: center;
 }
 
 .left {
     float: left;
     width: 67%;
 }
-
 .right {
     float: left;
     width: 30%;
     padding-left: 70px;
 }
-
+.left h2, .right h2 {
+    text-align: left;
+    font-size: 20px;
+}
 .about-img {
     margin-top: 10px;
     width: 100%;
@@ -221,6 +319,10 @@ a {
 
 .img-blog-post {
     text-align: center;
+}
+
+.left .blog-post {
+    padding-bottom: 27px;
 }
 
 .blog-post, .img-blog-post {
@@ -263,6 +365,7 @@ a {
 
 .blog p {
     font-size: 14px;
+    font-weight: 300;
 }
 
 .pageBreak {
@@ -271,6 +374,30 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0%;
+}
+
+@media (max-width: 786px) {
+    .left, .right {   
+        width: 100%;
+        padding: 0;
+    }
+    .blog-post {
+        padding: 20px;
+        margin: 30px 0;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .logo-img {
+        text-align: center;
+        height:40%;
+        width: 40%;
+    }
+    .socials {
+        justify-content: left;
+    }
 }
 
 /*----------------------------*/
@@ -313,7 +440,8 @@ a {
 }
 
 /*----------------------------*/
-/*FOOTER*/
+/*SECTION 7 - FOOTER*/
+
 footer {
     margin: 0px;
     padding: 40px 80px 20px 0px;
@@ -328,6 +456,16 @@ footer {
     vertical-align: top;
     text-align: left;
 }
+
+.footerInfo a {
+    text-decoration: none;
+    color: #272343;
+}
+
+.footerInfo img {
+    width: 200px;
+    margin: 0%;
+}
 .footerInfo .socials {
     display: flex;
     justify-content: left;
@@ -341,65 +479,23 @@ footer {
         background-color: #FFFFFF;
 }
 
-.footerInfo a {
-    text-decoration: none;
-    color: #272343;
-}
-
-.footerInfo img {
-    width: 70%;
-    margin: 0%;
-}
-
 .copyright {
-    margin: 60px 0px 0px 80px;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightcopy {
+    margin-left: 40px ;
 }
 
-.copyright span {
-    float: right;
+@media (max-width: 768px) {
+    .footerInfo img {
+            width: 80%;
+    }
+    .copyright p {
+        font-size: 12px;
+    }
+    .footerInfo .socials a {
+        border: none;
+    }
 }
-
-
-/*----------------------------*/
-/*RESPONSIVE PAGE*/
-
-@media (min-width: 600px) and (max-width: 991px) {
-    .left, .right {   
-      width: 100%;
-      padding: 0;
-    }
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-      }
-    .logo-img {
-        text-align: center;
-        height:40%;
-        width: 40%;
-    }
-
-}
-
-@media screen and (max-width: 599px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .left, .right {   
-        width: 100%;
-        padding: 0;
-      }
-    .copyright {
-        float: none;
-        text-align: center;
-        padding: 2px;
-    }
-    .logo-img {
-        height:40%;
-        width: 40%;
-    }
-    
-  }
