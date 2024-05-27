@@ -18,21 +18,35 @@
         <!-- NAVIGATION BAR -->
         <div class="navigationBar">
             <nav>
-                <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>           
-                <a href="#" class="right"><i class="far fa-user-circle"></i></a>
-                <a href="#" class="right"><i class="fa fa-shopping-cart"></i></a>   
-                <a href="/contact-page/contact.html" class="right">Contact Us</a>
-                <a href="/about-page/about.html" class="right">About Us</a>
-                <a href="/blog-page/blog.html" class="right">Blog</a>
-                <a href="/shop-page/shop.html" class="right">Shop</a>
-                <a href="/index.html" class="right" class="selected">Home</a>
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+
+                <div class="links-container">
+                    <label for="sidebar-active" class="close-sidebar-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+
+                    <a href="index.html" class="home-link">
+                        <img src="/homepage-images/logo.png" alt="logo" style="width: 80px;">
+                    </a>
+
+                    <a href="index.html" class="hover">Home</a>
+                    <a href="/shop-page/shop.html" class="hover">Shop</a>
+                    <a href="/blog-page/blog.html" class="hover">Blog</a>
+                    <a href="/about-page/about.html" class="hover">About</a>
+                    <a href="/contact-page/contact.html" class="hover">Contact</a>
+                    <a href="/login-page/login.html" class="hover"><i class="fas fa-user"></i></a>
+                </div>
             </nav>
         </div>
+
         <!-- LANDING PAGE -->
         <div id="titlePage">
             <h1>Sweet Delights</h1>
             <p id="quoteOne">Serving up some sweet happiness.</p>
-            <a href="pages/shop.html" class="styled-link">Shop Now</a>
+            <button><a href="pages/shop.html">Shop Now</a></button>
         </div>
     </header>
     <main>
@@ -40,7 +54,8 @@
         <div id="shopIntroduction">
             <div id="intro">
                 <p>Sweetopia was born out of a natural love of baking and a passion for how the simple act of eating dessert makes people feel.</p>
-                <a href="/about-page/about.html" class="styled-link">Learn more.</a> <!-- LINK TO ABOUT US -->
+                 <!-- LINK TO ABOUT US -->
+                <button><a href="/about-page/about.html">Learn more.</a></button>
             </div>
            <div class="image1">
                 <img src="homepage-images/intro-image.jpg" alt="basket of cookies">
@@ -54,37 +69,37 @@
                 <div class="best-seller">
                     <img src="homepage-images/chocolate-cookies.webp" alt="stack of chocolate cookies">
                     <p class="productName">Chewy Chocolate Chip Cookie</p>
-                    <p class="productPrice">Dh 21</p>
+                    <p class="productPrice">Dh 201</p>
                 </div>
                 <div class="best-seller">
                     <img src="homepage-images/honey-cake.webp" alt="Slice of cake in focus - cut cake in the background">
                     <p class="productName">Honey Cake</p>
-                    <p class="productPrice">Dh 214</p>
+                    <p class="productPrice">Dh 402</p>
                 </div>
                 <div class="best-seller">
                     <img src="homepage-images/baked-cheesecake.webp" alt="SLice of cake in focus - cut cake in background">
                     <p class="productName">Baked Cheesecake</p>
-                    <p class="productPrice">Dh 275</p>
+                    <p class="productPrice">Dh 229</p>
                 </div>
                 <div class="best-seller">
                     <img src="homepage-images/almond-croissant.webp" alt="a piece of almond croissant">
                     <p class="productName">Almond Croissant</p>
-                    <p class="productPrice">Dh 17</p>
+                    <p class="productPrice">Dh 28</p>
                 </div>
                 <div class="best-seller">
                     <img src="homepage-images/hazelnut-cookies.webp" alt="close-up of hazelnut cookies">
                     <p class="productName">Hazelnut Cookie</p>
-                    <p class="productPrice">Dh 19</p>
+                    <p class="productPrice">Dh 201</p>
                 </div>
                 <div class="best-seller">
                     <img src="homepage-images/supreme-brownies.webp" alt="tray of brownies">
                     <p class="productName">Supreme Brownies</p>
-                    <p class="productPrice">Dh 32</p>
+                    <p class="productPrice">Dh 285</p>
                 </div>
             </div>
             <br>
             <!-- BUTTON - VIEW SHOP -->
-            <a href="/shop-page/shop.html" class="styled-link">View Shop</a>
+            <button><a href="/shop-page/shop.html">View Shop</a></button>
         </div>
 
         <!-- PAGE BREAK -->
@@ -122,29 +137,62 @@
             </div>
             <!-- BUTTON - VIEW SHOP -->
             <br><br><br>
-            <a href="/shop-page/shop.html#Favourites" class="link">View All Categories</a>
+            <button>
+                <a href="/shop-page/shop.html#Favourites" class="link">View All Categories</a>
+            </button>
         </div>
 
         <!-- PAGE BREAK -->
         <div class="pageBreak2"></div>
 
-        <!-- TESTIMONIALS -->
-        <div id="testimonials">
-            <h2>Customer Reviews</h2>
-            <div class="review">
-                <h4>Hanan I.</h4>
-                <p class="stars">★★★★★</p>
-                <p>Whenever i crave something sweet, home bakery is the first on my list. The fried cookie dish, Nutella toast, spanish latte, saffron milk cake, Ferraro roche cake, and the list goes on. Every few months they update the menu as well with new items that are yummier than the ones before and their staff are friendly as well.</p>
-            </div>
-            <div class="review">
-                <h4>Ayesha</h4>
-                <p class="stars">★★★★★</p>
-                <p>It is one of my favorite places to visit when I want to relax and enjoy cup a coffee. The cafe provides a great set of food and desserts. I’ve visited the one opened in Al Khawaneej walk and it is always packed due to the delicious food. In this visit I tried their famous French toast and latte. As usual delicious and mouthwatering.</p>
-            </div>
-            <div class="review">
-                <h4>Megs J.</h4>
-                <p class="stars">★★★★☆</p>
-                <p>Home Bakery located in Galleria Mall, Wasl Road is my favorite spot for cakes, cookies and coffee. Whenever I am in Wasl Road I make it a point to visit Home Bakery and pick up their cookies and cakes. Their food products are of high quality, super fresh and incredibly delicious. It is one of my favorite dessert places in Dubai.</p>
+        <!-- testimonials -->
+        <div class="testimonial-section">
+            <h2>Testimonials</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="review">
+                        <img src="/about-page/images/review1.jpg" alt="">
+                        <div class="name">Mark J.</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Whenever i crave something sweet, home bakery is the first on my list. The fried cookie dish, Nutella toast, spanish latte, saffron milk cake, Ferraro roche cake, and the list goes on. Every few months they update the menu as well with new items that are yummier than the ones before and their staff are friendly as well.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="review">
+                        <img src="/about-page/images/review2.jpg" alt="">
+                        <div class="name">Ayesha</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>It is one of my favorite places to visit when I want to relax and enjoy cup a coffee. The cafe provides a great set of food and desserts. I’ve visited the one opened in Al Khawaneej walk and it is always packed due to the delicious food. In this visit I tried their famous French toast and latte. As usual delicious and mouthwatering.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="review">
+                        <img src="/about-page/images/review3.jpg" alt="">
+                        <div class="name">Hanan I.</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Sweet Delights located in Galleria Mall, Wasl Road is my favorite spot for cakes, cookies and coffee. Whenever I am in Wasl Road I make it a point to visit the Bakery and pick up their cookies and cakes. Their food products are of high quality, super fresh and incredibly delicious. It is one of my favorite dessert places in Dubai. </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -157,7 +205,9 @@
                 <h2>Check out our Blog</h2>
                 <p>Continuously looking to experiment with new recipies and combinations, the list of delicious Home Bakery products available is ever growing.</p>
                 <br>
-                <a href="pages/blog.html" class="styled-link">Kitchen Experiences</a>
+                <button>
+                    <a href="pages/blog.html">Kitchen Experiences</a>
+                </button>
                 <br>
                 <br>
             </div>
@@ -185,10 +235,14 @@
 
 
         <!-- COPYRIGHT -->
-        <p class="copyright">
-            Terms & Privacy / Site by Syeda Hafsa 
-            <span id="right">&copy Sweet Delight 2024, All Rights Reserved</span>
-        </p>
+        <div class="copyright">
+            <div class="rightcopy">
+                <p>Terms & Privacy / Site by Syeda Hafsa</p>
+            </div> 
+            <div>
+                <p><span id="right">&copy Sweet Delight 2024, All Rights Reserved</span></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
