@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
 
     <title>Supreme Brownies</title> <!--page title - shows on tab-->
+    <link rel="icon" type="image/x-icon" href="/favicon.png"> <!-- favicon -->
 
-    <link rel="stylesheet" href="/favorite-product-pages/product.css"/>
-    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/favorite-product-pages/product.css"/> <!-- stylesheet -->
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script> <!-- icon -->
 </head>
 
 <body>
+    <!-- header section -->
     <header>
+        <!-- navigation bar -->
         <div class="navigationBar">
             <nav>
-                <a href="index.html" id="left"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>                
-                <a href="#" id="right"><i class="far fa-user-circle"></i></a>
-                <a href="#" id="right"><i class="fa fa-shopping-cart"></i></a>   
-                <a href="/contact-page/contact.html" id="right" class="selected">Contact Us</a>
-                <a href="/about-page/about.html" id="right">About Us</a>
-                <a href="/blog-page/blog.html" id="right">Blog</a>
-                <a href="/shop-page/shop.html" id="right">Shop</a>
-                <a href="/index.html" id="right">Home</a>
+                <a href="index.html" id="left">
+                    <img src="/homepage-images/logo.png" alt="Sweetopia Logo">
+                </a>
             </nav>
         </div>
     </header>
+    <!-- header section ends -->
 
+    <!-- main section -->
     <main>
         <div class="card-wrapper">
             <div class="card">
@@ -53,9 +53,11 @@
 
                 <!-- card right -->
                 <div class="product-content">
+                    <!-- product details -->
                     <h2 class="product-title">
                         Supreme Brownies
                     </h2>
+                    <!-- star ratings -->
                     <div class="product-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -77,18 +79,21 @@
                         </ul>
                     </div>
 
+                    <!-- number of items -->
                     <div class="purchase-info">
                         <input type="number" min="0" max="10" value="1">
                         <button type="button" class="btn">
                             Add to Cart <i class="fas fa-shopping-cart"></i>
                         </button>
                     </div>
+                    <!-- social links -->
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-pinterest"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
+                    <!-- back to shop button -->
                     <div class="back-to-shop">
                         <a href="/shop-page/shop.html">Back to Shop</a>
                     </div>
@@ -96,7 +101,9 @@
             </div>
         </div>
     </main>
+    <!-- main section ends -->
     
+    <!-- javascript -->
     <script src="/js/script3.js"></script>
 </body>
 </html>
