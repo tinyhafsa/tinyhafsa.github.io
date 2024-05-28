@@ -1,30 +1,40 @@
 <!DOCTYPE html> <!--DTD: Document Type Definition-->
 <html lang="en"> 
+
 <head>
     <meta charset="UTF-8"> <!--meta: data about data--> <!--charset: allows multiple languages-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
 
     <title>Blog</title> <!--page title - shows on tab-->
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.png"> <!-- favicon -->
 
-    <link rel="stylesheet" href="/blog-page/blog.css"/>
-    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/blog-page/blog.css"/> <!-- stylesheet -->
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script> <!-- icons -->
 </head>
 
 <body>
+    <!-- header section -->
     <header>
+        <!-- naviagtion bar -->
         <div class="navigationBar">
             <nav>
                 <input type="checkbox" id="sidebar-active">
                 <label for="sidebar-active" class="open-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    <!-- icon for menu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
                 </label>
                 <label id="overlay" for="sidebar-active"></label>
                 <div class="links-container">
                     <label for="sidebar-active" class="close-sidebar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        <!-- icon to close menu -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
                     </label>
-        
+                    
+                    <!-- links -->
                     <a href="/index.html" class="home-link">
                         <img src="/homepage-images/logo.png" alt="logo" style="width: 80px;">
                     </a>
@@ -39,15 +49,21 @@
             </nav>
         </div>
 
+        <!-- landing page -->
         <div id="titlePage">
             <h1>Blog</h1>
         </div>
     </header>
+    <!-- header section ends -->
 
+    <!-- main section -->
     <main>
+        <!-- recipes section -->
         <div class="top">
             <h2>Recipes</h2>
             <div class="blog-post">
+
+                <!-- recipe 1 -->
                 <div class="column">
                     <div class="article">
                         <img src="/blog-page/images/posts/recipe-1.jpg" alt="cut slices of Frozen Strawberry Trifle" class="postimg">
@@ -55,6 +71,8 @@
                         <p>We’ve reinvented a classic British pudding for summer with this frozen strawberry trifle recipe. </p>
                     </div>
                 </div>
+
+                <!-- recipe 2 -->
                 <div class="column">
                     <div class="article">
                         <img src="/blog-page/images/posts/recipe-2.jpg" alt="cut slices of Frozen Strawberry Trifle" class="postimg">
@@ -62,6 +80,8 @@
                         <p>This gorgeous dessert combines a rich lemon tart base with a caramelised brûlée crust and crisp, sugary meringues.</p>
                     </div>
                 </div>
+                
+                <!-- recipe 3 -->
                 <div class="column">
                     <div class="article">
                         <img src="/blog-page/images/posts/recipe-3.jpg" alt="cut slices of Frozen Strawberry Trifle" class="postimg">
@@ -75,9 +95,13 @@
             </div>
         </div>
 
+        <!-- blog section -->
         <div class="blog">
             <h2>Baking Insights</h2>
+
+            <!-- left section -->
             <div class="left">
+                <!-- left 1 -->
                 <div class="blog-post">
                     <h2>Healthier Baking Alternatives</h2>
                     <h5>Tips for Nutritious Treats, May 15, 2024</h5>
@@ -86,6 +110,8 @@
                     <p>Discover how to make your favorite baked goods healthier without sacrificing flavor. Learn about nutritious ingredient swaps and healthier baking techniques.</p>
                     <a href="#">Read More.</a>
                 </div>
+
+                <!-- left 2 -->
                 <div class="blog-post">
                     <h2>The Ultimate Guide to Baking with Kids</h2>
                     <h5>Family Fun in the Kitchen, April 14, 2024</h5>
@@ -96,10 +122,14 @@
                 </div>
             </div>
 
+            <!-- right section -->
             <div class="right">
+                <!-- right 1 -->
                 <div class="img-blog-post">
                     <a href="/shop-page/shop.html"><img src="/blog-page/images/posts/shop logo.png" class="logo-img" alt="logo of the shop"></a>
                 </div>
+
+                <!-- right 2 -->
                 <div class="blog-post">
                     <h2>About Us
                     <img src="/blog-page/images/posts/about.jpg" class="about-img" alt="two kids baking together">
@@ -107,6 +137,7 @@
                     <a href="/about-page/about.html">Learn more.</a></p>
                 </div>
 
+                <!-- right 3 -->
                 <div class="blog-post">
                     <h2>Popular Posts</h2>
                     <div class="sidepost">
@@ -126,8 +157,10 @@
                     </div>
                 </div>
 
+                <!-- right 4 -->
                 <div class="blog-post socials-section">
                     <h3>Follow Us</h3>
+                    <!-- social icons -->
                     <div class="socials">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -156,7 +189,9 @@
             </div>
         </div>
     </main>
+    <!-- main section ends -->
 
+    <!-- footer section -->
     <footer>
         <!-- LOGO -->
         <div class="footerInfo">
@@ -171,6 +206,7 @@
             <p><a href="/contact-page/contact.html">Contact Us</a></p>
         </div>
 
+        <!-- address -->
         <div class="footerInfo">
             <p>Grand Lamas <br> NewMarket Alley</p>
             <p>+971 8 424 7540 <br> +971 9 591 1010</p>
@@ -183,7 +219,6 @@
             </div>
         </div>
 
-
         <!-- COPYRIGHT -->
         <div class="copyright">
             <div class="rightcopy">
@@ -194,6 +229,8 @@
             </div>
         </div>
     </footer>
+    <!-- footer section ends -->
+
     <!-- JAVASCRIPT -->
     <script src="/js/script2.js"></script>
 

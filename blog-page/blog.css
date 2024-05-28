@@ -1,5 +1,8 @@
+/*font import*/
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*----------------------------*/
+/*page style*/
 * {
     box-sizing: border-box;
 }
@@ -15,6 +18,7 @@ body {
 }
 
 /*----------------------------*/
+/*custom scrollbar*/
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -36,7 +40,7 @@ body {
 }
 
 /*----------------------------*/
-
+/*text style*/
 h1 {
     font-family: "Homemade Apple", cursive;
 }
@@ -53,7 +57,7 @@ h5 {
 }
 
 /*----------------------------*/
-
+/*header style*/
 header {
     margin: 0px;
     padding: 0px;
@@ -62,7 +66,7 @@ header {
     background-size: cover;
     height: 60%;
 }
-
+/*navigation bar styling*/
 .navigationBar {
     position: fixed;
     top: 0;
@@ -70,6 +74,7 @@ header {
     z-index: 1000;
     transition: background-color 0.3s;
 }
+/*scrolled navigation styling*/
 .navigationBar.scrolled {
     background-color: #FFFFFF;
     color: #272343;
@@ -129,6 +134,7 @@ nav svg.scrolled-svg {
 .open-sidebar-button, .close-sidebar-button {
     display: none;
 }
+/*responsive navigation bar styling*/
 @media (max-width: 768px) {
     .links-container {
         flex-direction: column;
@@ -499,3 +505,4 @@ footer {
         border: none;
     }
 }
+/*----------------------------*/
