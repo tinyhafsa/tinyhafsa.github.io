@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fits screen to different devices-->
 
     <title>Account</title> <!--page title - shows on tab-->
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.png"> <!-- favicon -->
 
-    <link rel="stylesheet" href="/login-page/login.css"/>
-    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/login-page/login.css"/> <!-- stylesheet -->
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script> <!-- icon -->
 </head>
 
 <body>
+    <!-- header section -->
     <header>
+        <!-- navigation bar -->
         <div class="navigationBar">
             <nav>
-                <a href="/index.html" id="center"><img src="/homepage-images/logo.png" alt="Sweetopia Logo"></a>
+                <!-- logo link -->
+                <a href="/index.html" id="center">
+                    <img src="/homepage-images/logo.png" alt="Sweetopia Logo">
+                </a>
             </nav>
         </div>
     </header>
+    <!-- header section -->
 
-
+    <!-- main section -->
     <main>
         <div class="container">
             <input type="checkbox" id="flip">
@@ -31,7 +37,10 @@
             </div>
             <form action="#">
                 <div class="form-content">
+
+                    <!-- section 1 - sign in -->
                     <div class="login-form">
+                        <!-- input form -->
                         <div class="title">Sign In</div>
                         <div class="input-form">
                             <div class="input-box">
@@ -48,11 +57,15 @@
                             <div class="button input-box">
                                 <input type="submit" value="Submit">
                             </div>
-                            <div class="text login-text">Don't have an account? <label for="flip">Sign Up now</label> </div>
+                            <div class="text login-text">Don't have an account? 
+                                <label for="flip">Sign Up now</label> 
+                            </div>
                         </div>
                     </div>
         
+                    <!-- section 2 - sign up -->
                     <div class="signup-form">
+                        <!-- input form -->
                         <div class="title">Sign Up</div>
                         <div class="input-form">
                             <div class="input-box">
@@ -71,15 +84,16 @@
                                 <input type="submit" value="Submit">
                             </div>
         
-                            <div class="text sign-up-text">Already have an account? <label for="flip">Sign In now</label> </div>
+                            <div class="text sign-up-text">Already have an account? 
+                                <label for="flip">Sign In now</label> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </main>
-
-
+    <!-- main section -->
 
 </body>
 </html>
