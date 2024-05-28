@@ -1,4 +1,9 @@
+/*----------------------------*/
+/*font import*/
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*----------------------------*/
+/*page style*/
 
 html {
     scroll-behavior: smooth;
@@ -33,6 +38,7 @@ body {
   }
 
 /*----------------------------*/
+/*text styles*/
 
 h1, h2 {
     font-family: "Homemade Apple", cursive;
@@ -52,6 +58,8 @@ header {
     background-size: cover;
     height: 100%;
 }
+
+/*navigation bar*/
 .navigationBar {
     position: fixed;
     top: 0;
@@ -62,7 +70,6 @@ header {
 .navigationBar.scrolled {
     background-color: #FFFFFF;
 }
-
 nav {
     height: 60px;
     background-color: transparent;
@@ -149,7 +156,6 @@ nav svg {
 
 /*-----------------------------------*/
 /*LANDING PAGE*/
-
 #titlePage {
     display: block; /* Ensure the title is visible by default */
     text-align: center;
@@ -197,12 +203,14 @@ nav svg {
 }
 
 /*----------------------------*/
-
+/*main section style*/
 main {
     border-top: 30px solid #BAE8E8;
     border-bottom: 30px solid #BAE8E8;;
 }
 
+/*----------------------------*/
+/*buttons*/
 button {
     background-color: #FFFFFF;
     border: 1px solid #272343;
@@ -219,7 +227,6 @@ button {
 }
 
 /*----------------------------*/
-
 /*SECTION 2 - INTRODUCTION*/
 
 #shopIntroduction {
@@ -283,35 +290,29 @@ button {
     border: 2px solid #BAE8E8;
     margin: 70px 100px;
 }
-
 .products {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
-
 #bestSelling h2 {
     margin: 20px;
     padding: 10px;
 }
-
 #bestSelling img {
     width: 250px;
     height: 320px;
     object-fit: cover;
     padding: 3px;
 }
-
 .best-seller {
     display: inline-block;
     margin: 15px;
     padding: 3px;
 }
-
 .best-seller:hover {
     background-color: #BAE8E8;
 }
-
 .best-seller .productName {
     font-size: 16px;
     padding: 2px;
@@ -320,14 +321,12 @@ button {
 .best-seller a {
     color: #272343;
 }
-
 .best-seller .productPrice {
     font-size: 14px;
     color: #272343;
     padding: 2px;
     margin: 2px;
 }
-
 #bestSelling button {
     background-color: transparent;
     border: 1px solid #272343;
@@ -363,23 +362,19 @@ button {
     text-align: center;
     background-color: #E3F6F5;
 }
-
 #categories h2 {
     margin: 20px;
     padding: 10px;
 }
-
 #categories h4 {
     padding: 5px;
     margin: 5px;
 }
-
 #categories img {
     width: 200px;
     height: 300px;
     object-fit: cover;
 }
-
 .category {
     display: inline-block;
     margin: 15px 10px;
@@ -388,17 +383,14 @@ button {
     padding: 0%;
     height: 338px ;
 }
-
 .category a {
     text-decoration: none;
     color: #272343;
 }
-
 .category:hover {
     background-color: #BAE8E8;
     color: #FFFFFF;
 }
-
 #categories .link a {
     font-size: 14px;
     text-decoration: none;
@@ -476,9 +468,7 @@ button {
     }
 }
 
-
 /*----------------------------*/
-
 /*PAGE BREAK*/
 
 .pageBreak3 {
@@ -490,7 +480,6 @@ button {
 }
 
 /*----------------------------*/
-
 /*SECTION 6 - JOIN COMMUNITY*/
 
 #joinCommunity {
@@ -501,7 +490,6 @@ button {
     padding: 60px 80px;
     text-align: center;
 }
-
 #joinCommunity h2 {
     margin: 20px;
     padding: 10px;
@@ -536,8 +524,6 @@ button {
 }
 
 /*----------------------------*/
-
-/*----------------------------*/
 /*SECTION 7 - FOOTER*/
 
 footer {
@@ -546,7 +532,6 @@ footer {
     background-color: #E3F6F5;
     text-align: center;
 }
-
 .footerInfo {
     display: inline-block;
     margin: 0% 3%;
@@ -554,12 +539,10 @@ footer {
     vertical-align: top;
     text-align: left;
 }
-
 .footerInfo a {
     text-decoration: none;
     color: #272343;
 }
-
 .footerInfo img {
     width: 200px;
     margin: 0%;
@@ -584,7 +567,6 @@ footer {
 .footerInfo .socials a:hover {
         background-color: #FFFFFF;
 }
-
 .copyright {
     display: flex;
     justify-content: space-between;
@@ -605,3 +587,4 @@ footer {
         border: none;
     }
 }
+/*----------------------------*/

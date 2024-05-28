@@ -7,25 +7,34 @@
     <!--font import-->
 
     <title>Sweet Delights</title> <!--page title - shows on tab-->
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png"> <!-- favicon -->
 
-    <link rel="stylesheet" href="style.css"/>
-    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="style.css"/> <!-- stylesheet -->
+    <script src="https://kit.fontawesome.com/a346bbb570.js" crossorigin="anonymous"></script> <!-- icon -->
+    <script src="/js/script.js"></script> <!-- javascript -->
 </head>
+
+
 <body>
+    <!-- header section -->
     <header>
         <!-- NAVIGATION BAR -->
         <div class="navigationBar">
             <nav>
                 <input type="checkbox" id="sidebar-active">
                 <label for="sidebar-active" class="open-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    <!-- icon for menu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
                 </label>
                 <label id="overlay" for="sidebar-active"></label>
                 <div class="links-container">
                     <label for="sidebar-active" class="close-sidebar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        <!-- icon to close menu -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
                     </label>
 
                     <a href="index.html" class="home-link">
@@ -49,6 +58,9 @@
             <button><a href="pages/shop.html">Shop Now</a></button>
         </div>
     </header>
+    <!-- header section ends -->
+
+    <!-- main section -->
     <main>
         <!-- SHOP INTRODUCTION -->
         <div id="shopIntroduction">
@@ -66,31 +78,37 @@
         <div id="bestSelling">
             <h2>Forever Favorites</h2>
             <div class="products">
+                <!-- product 1 -->
                 <div class="best-seller">
                     <img src="homepage-images/chocolate-cookies.webp" alt="stack of chocolate cookies">
                     <a href="/favorite-product-pages/product1.html"><p class="productName">Chewy Chocolate Chip Cookie</p></a>
                     <p class="productPrice">Dh 201</p>
                 </div>
+                <!-- product 2 -->
                 <div class="best-seller">
                     <img src="homepage-images/honey-cake.webp" alt="Slice of cake in focus - cut cake in the background">
                     <a href="/favorite-product-pages/product2.html"><p class="productName">Honey Cake</p></a>
                     <p class="productPrice">Dh 402</p>
                 </div>
+                <!-- product 3 -->
                 <div class="best-seller">
                     <img src="homepage-images/baked-cheesecake.webp" alt="SLice of cake in focus - cut cake in background">
                     <a href="/favorite-product-pages/product3.html"><p class="productName">Baked Cheesecake</p></a>
                     <p class="productPrice">Dh 229</p>
                 </div>
+                <!-- product 4 -->
                 <div class="best-seller">
                     <img src="homepage-images/almond-croissant.webp" alt="a piece of almond croissant">
                     <a href="/favorite-product-pages/product4.html"><p class="productName">Almond Croissant</p></a>
                     <p class="productPrice">Dh 28</p>
                 </div>
+                <!-- product 5 -->
                 <div class="best-seller">
                     <img src="homepage-images/hazelnut-cookies.webp" alt="close-up of hazelnut cookies">
                     <a href="/favorite-product-pages/product5.html"><p class="productName">Hazelnut Cookie</p></a>
                     <p class="productPrice">Dh 201</p>
                 </div>
+                <!-- product 6 -->
                 <div class="best-seller">
                     <img src="homepage-images/supreme-brownies.webp" alt="tray of brownies">
                     <a href="/favorite-product-pages/product6.html"><p class="productName">Supreme Brownies</p></a>
@@ -109,27 +127,32 @@
         <!-- CATEGORIES -->
         <div id="categories">
             <h2>Categories</h2>
+            <!-- category 1 -->
             <div class="category">
                 <a href="/shop-page/shop.html#Cakes">
                     <h4>Cakes</h4>
                     <img src="homepage-images/cake-category.webp" alt="slice of cake in focus - cut cake in background"></a>
             </div>
+            <!-- category 2 -->
             <div class="category">
                 <a href="/shop-page/shop.html#Pasteries">
                     <h4>Pasteries</h4>
                     <img src="homepage-images/pastery-category.webp" alt="close-up of a pastery">
                 </a>
             </div>
+            <!-- category 3 -->
             <div class="category">
                 <a href="/shop-page/shop.html#Cookies">
                     <h4>Cookies</h4>
                     <img src="homepage-images/cookie-category.jpg" alt="cookies on a tray"></a>
             </div>
+            <!-- category 4 -->
             <div class="category">
                 <a href="/shop-page/shop.html#Loafs">
                     <h4>Loafs</h4>
                     <img src="homepage-images/loaf-category.webp" alt="close-up of slice of loaf - cut loaf in background"></a>
             </div>
+            <!-- category 5 -->
             <div class="category">
                 <a href="/shop-page/shop.html#Others">
                     <h4>Others</h4>
@@ -150,6 +173,7 @@
             <h2>Testimonials</h2>
             <div class="row">
                 <div class="col">
+                    <!-- review 1 -->
                     <div class="review">
                         <img src="/about-page/images/review1.jpg" alt="">
                         <div class="name">Mark J.</div>
@@ -165,6 +189,7 @@
                 </div>
 
                 <div class="col">
+                    <!-- review 2 -->
                     <div class="review">
                         <img src="/about-page/images/review2.jpg" alt="">
                         <div class="name">Ayesha</div>
@@ -180,6 +205,7 @@
                 </div>
 
                 <div class="col">
+                    <!-- review 3 -->
                     <div class="review">
                         <img src="/about-page/images/review3.jpg" alt="">
                         <div class="name">Hanan I.</div>
@@ -213,6 +239,9 @@
             </div>
         </div>
     </main>
+    <!-- main section ends -->
+    
+    <!-- footer section -->
     <footer>
         <!-- LOGO -->
         <div class="footerInfo">
@@ -227,6 +256,7 @@
             <p><a href="/contact-page/contact.html">Contact Us</a></p>
         </div>
 
+        <!-- address -->
         <div class="footerInfo">
             <p>Grand Lamas <br> NewMarket Alley</p>
             <p>+971 8 424 7540 <br> +971 9 591 1010</p>
@@ -239,7 +269,6 @@
             </div>
         </div>
 
-
         <!-- COPYRIGHT -->
         <div class="copyright">
             <div class="rightcopy">
@@ -250,5 +279,6 @@
             </div>
         </div>
     </footer>
+    <!-- footer section ends -->
 </body>
 </html>
