@@ -1,5 +1,8 @@
+/*font imports*/
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*----------------------------*/
+/*-- Page style ---*/
 * {
     box-sizing: border-box;
 }
@@ -15,6 +18,7 @@ body {
 }
 
 /*----------------------------*/
+/*---- custom scrollbar ---------*/
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -37,6 +41,7 @@ body {
 
 /*----------------------------*/
 
+/*---- text styles -----*/
 h1 {
     font-family: "Homemade Apple", cursive;
 }
@@ -53,7 +58,7 @@ h5 {
 }
 
 /*----------------------------*/
-
+/*----- header style -------*/
 header {
     margin: 0px;
     padding: 0px;
@@ -62,7 +67,7 @@ header {
     background-size: cover;
     height: 60%;
 }
-
+/*----- navigation bar -----*/
 .navigationBar {
     position: fixed;
     top: 0;
@@ -70,6 +75,7 @@ header {
     z-index: 1000;
     transition: background-color 0.3s;
 }
+/*--- scrolled navigation bar ------*/
 .navigationBar.scrolled {
     background-color: #FFFFFF;
     color: #272343;
@@ -129,6 +135,7 @@ nav svg.scrolled-svg {
 .open-sidebar-button, .close-sidebar-button {
     display: none;
 }
+/*---- responsive navigation bar ------*/
 @media (max-width: 768px) {
     .links-container {
         flex-direction: column;
@@ -205,6 +212,7 @@ nav svg.scrolled-svg {
 }
 /*----------------------------*/
 
+/*---- main section styling ----*/
 main {
     border-top: 30px solid #BAE8E8;
     border-bottom: 30px solid #BAE8E8;;
@@ -316,6 +324,7 @@ input[type=submit]:hover {
 }
 /*----------------------------*/
 
+/*---- page break styling ----*/
 .pageBreak {
     padding: 100px 0px 0px 0px;
     background-image: url(/contact-page/images/pagebreak.jpg);
@@ -325,6 +334,8 @@ input[type=submit]:hover {
 }
 
 /*----------------------------*/
+
+/*---- faq section styling ------*/
 .faqs {
     padding: 5% 15%;
     margin-bottom: 30px ;
@@ -347,7 +358,6 @@ input[type=submit]:hover {
     font-size: 15px;
     transition: 0.4s;
 }
-
   
 .active, .question:hover {
     background-color: #BAE8E8; 
@@ -363,6 +373,7 @@ input[type=submit]:hover {
 
 /*----------------------------*/
 
+/*----- footer section styling -------*/
 footer {
     margin: 0px;
     padding: 40px 80px 20px 0px;
