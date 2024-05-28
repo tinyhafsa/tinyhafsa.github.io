@@ -140,7 +140,7 @@ nav svg.scrolled-svg {
         z-index: 10;
         width: 300px;
 
-        background-color: #2D9596;
+        background-color: #BAE8E8;
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
         transition: 0.5s ease-out;
     }
