@@ -254,6 +254,10 @@ main {
     }
 }
 
+#Favourites a {
+    color: #272343;
+}
+
 /*----------------------------*/
 /*PRODUCTS*/
 .product-list {
